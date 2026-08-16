@@ -272,7 +272,8 @@ version: 1.0.0
   .edu-desc { margin-top: 1.5px; text-align: justify; color: #3a4048; }
 
   /* === CERTIFICATIONS === */
-  .cert-table { display: block; }
+  .cert-table,
+  .award-table { display: block; }
 
   .cert-item {
     display: flex;
@@ -422,11 +423,19 @@ version: 1.0.0
     <div class="cert-table">{{CERTIFICATIONS}}</div>
   </div>
 
+  <!-- AWARDS -->
+  <div class="section">
+    <div class="section-title">{{SECTION_AWARDS}}</div>
+    <div class="award-table">{{AWARDS}}</div>
+  </div>
+
   <!-- SKILLS -->
   <div class="section">
     <div class="section-title">{{SECTION_SKILLS}}</div>
     {{SKILLS}}
   </div>
+
+  <!-- END -->
 
 </div>
 </body>
